@@ -5,10 +5,11 @@ public class Calculator
 	public static void main(String[] args)
 		{
 		Scanner userIntInput = new Scanner(System.in);
+		Scanner userDoubleInput = new Scanner(System.in);
 		System.out.println("Please enter your first number.");
-		int firstNumber = userIntInput.nextInt();
+		double firstNumber = userDoubleInput.nextDouble();
 		System.out.println("Please enter your second number.");
-		int secondNumber = userIntInput.nextInt();
+		double secondNumber = userDoubleInput.nextDouble();
 		System.out.println("\nWhich operation would you like to perform?");
 		System.out.println("\t(1) add");
 		System.out.println("\t(2) subtract");
@@ -27,22 +28,22 @@ public class Calculator
 			System.out.println(divide(firstNumber, secondNumber));
 		}
 	
-	public static int add(int x, int y)
+	public static double add(double x, double y)
 		{
 		return x + y;	
 		}
 	
-	public static int subtract(int x, int y)
+	public static double subtract(double x, double y)
 		{
 		return x - y;	
 		}
 	
-	public static int multiply(int x, int y)
+	public static double multiply(double x, double y)
 		{
 		return x * y;	
 		}
 	
-	public static int divide(int x, int y)
+	public static double divide(double x, double y)
 		{
 		return x / y;	
 		}
